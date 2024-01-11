@@ -1,0 +1,42 @@
+{
+  "name": "solana-token-creator",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@formspree/react": "^2.5.1",
+    "@heroicons/react": "^1.0.5",
+    "@metaplex-foundation/mpl-token-metadata": "^2.3.3",
+    "@solana/spl-token": "^0.3.5",
+    "@solana/wallet-adapter-base": "^0.9.3",
+    "@solana/wallet-adapter-react": "^0.15.3",
+    "@solana/wallet-adapter-react-ui": "^0.9.5",
+    "@solana/wallet-adapter-wallets": "^0.18.2",
+    "@solana/web3.js": "^1.31.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "axios": "^1.6.5",
+    "daisyui": "^1.24.3",
+    "immer": "^9.0.12",
+    "next": "12.0.8",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^9.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.11.0",
+    "react-spinners": "^0.13.5",
+    "zustand": "^3.6.9"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.10",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.15",
+    "typescript": "4.5.4"
+  }
+}

@@ -1,0 +1,55 @@
+/* _reboot.css */
+
+html {
+    @apply relative scroll-smooth overflow-x-hidden;
+}
+
+body {
+    font-size: 15px;
+    @apply font-jost overflow-x-hidden text-default-500;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-semibold;
+}
+
+section {
+    @apply scroll-mt-12
+}
+
+.animate-spin-slow {
+    animation: spin 4s linear infinite
+}
+
+.animate-spin-slower {
+    animation: spin 6s linear infinite
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.animate-spin-reverse-slower {
+    animation: spin-reverse 6s linear infinite
+}
+
+@keyframes spin-reverse {
+    to {
+        transform: rotate(-1turn)
+    }
+}

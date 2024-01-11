@@ -1,0 +1,71 @@
+/* _swiper.css */
+
+.swiper-slide {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-1 {
+    height: 450px;
+    width: auto;
+}
+
+.swiper-pagination-bullets-dynamic {
+    @apply py-1;
+}
+
+/* logo swiper */
+
+#logo-swiper .swiper-slide {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#logo-swiper .swiper-slide-active {
+    @apply w-auto h-[60%] transition-all duration-700;
+    box-shadow: 0 7px 14px 0 rgba(52, 58, 64, 0.06);
+}
+
+.testimonial-swiper .swiper-pagination .swiper-pagination-bullet {
+    @apply h-1.5 w-4 bg-white opacity-50 rounded-sm;
+}
+
+.testimonial-swiper .swiper-pagination .swiper-pagination-bullet-active {
+    @apply ring-2 ring-offset-2 ring-offset-black bg-primary ring-primary;
+}
+
+/* custom marquee slider */
+
+.marquee__group {
+    animation: scroll 60s linear infinite;
+}
+
+.marquee--reverse .marquee__group {
+    animation-direction: reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 2rem));
+    }
+}
+
+.marquee-hero {
+    animation: hero 60s linear infinite;
+}
+
+.marquee-reverse .marquee-hero {
+    animation-direction: reverse;
+}
+
+@keyframes hero {
+    0% {
+        transform: translatey(0);
+    }
+    100% {
+        transform: translatey(calc(-100% - 2rem));
+    }
+}

@@ -1,0 +1,128 @@
+@import url("../../public/assets/libs/swiper/swiper-bundle.min.css");
+@import url("../../public/assets/css/style.min.css");
+@import url("../../public/assets/libs/aos/aos.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.new_loader {
+  z-index: 50;
+  width: 100%;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-error {
+  color: red;
+}
+.text-success {
+  color: green;
+}
+
+.text-info {
+  color: #7d3fde;
+}
+.upload {
+  z-index: 111;
+  width: 100%;
+  margin: 0 auto;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custum-file-upload {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #e8e8e8;
+  background-color: #212121;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px #e8e8e8;
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 80px;
+  fill: #e8e8e8;
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: #e8e8e8;
+}
+
+.custum-file-upload input {
+  display: none;
+}
+/* ??SWITCH */
+#checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #7d3fde;
+  border-radius: 50px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.switch svg path {
+  fill: white;
+}
+#checkbox:checked + .switch {
+  background-color: rgb(174, 0, 255);
+  box-shadow: 0px 0px 40px rgba(174, 0, 255, 0.438);
+}
+
+.new_add_css {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  .new_add_css {
+    display: grid;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}

@@ -1,0 +1,39 @@
+/* _navbar.css */
+
+.navbar {
+    @apply block overflow-hidden fixed top-0 inset-x-0 z-40 w-full lg: bg-transparent bg-default-950/60 backdrop-blur-2xl transition-all duration-500 shadow-xl lg:shadow-none;
+}
+
+.navbar nav {
+    @apply flex flex-wrap lg: flex-nowrap items-center justify-between py-4 transition-all duration-500;
+}
+
+.navbar nav .logo {
+    @apply inline-block whitespace-nowrap;
+}
+
+.navbar nav .navbar-nav {
+    @apply inline-flex flex-col lg: flex-row gap-y-2 gap-x-4 lg:items-center justify-center mt-4 lg:mt-0;
+}
+
+.navbar nav .navbar-nav .nav-item .nav-link {
+    @apply block relative tracking-wide py-1 mx-3.5 text-base capitalize font-semibold cursor-pointer transition-all duration-300 bg-transparent lg: text-white text-default-100 after:transition-all after:duration-500 after:absolute after:-bottom-1 after:h-[2px] after:w-0 after:start-0 after:rounded-full after:bg-transparent;
+}
+
+.navbar nav .navbar-nav .nav-item .nav-link:active,
+.navbar nav .navbar-nav .nav-item .nav-link:focus,
+.navbar nav .navbar-nav .nav-item .nav-link:hover {
+    @apply text-primary;
+}
+
+.navbar nav .navbar-nav .nav-item.active .nav-link {
+    @apply text-primary after: bg-primary after:w-3/4;
+}
+
+.navbar nav .navbar-nav .nav-btn {
+    @apply py-2 px-4 rounded-lg inline-flex items-center justify-center text-base font-medium transition-all bg-primary text-white lg: bg-white lg:text-primary;
+}
+
+.navbar.nav-sticky {
+    @apply bg-default-950/60 backdrop-blur-2xl transition-all duration-500 shadow-xl;
+}
