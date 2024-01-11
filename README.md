@@ -6,7 +6,7 @@
 
 Build your first Solana Token Creator Dapp Using Nestjs, Tyscript as frontend and Solana SDK with 100% decentralization, In the source code file you will get the complete source code of Solana Token Creator Dapp, which you can see in the tutorial
 
-Resource Final Code: [https://www.theblockchaincoders.com/sourceCode/how-to-create-liquidity-token-marketplace-including-ico-token-sale](https://www.theblockchaincoders.com/sourceCode/crowd-funding-marketplace-project-source-code)
+Resource Final Code: https://www.theblockchaincoders.com/sourceCode/create-solana-token-creator-dapp
 
 
 Get Pro Blockchain Developer Course: https://www.theblockchaincoders.com/pro-nft-marketplace
